@@ -48,21 +48,21 @@ class SelectionAndBubbleSortTest {
     @Test
     void testBubbleSortForNotSortedArray() {
         int[] input = new int[] {4, 9, 2, -1, 0};
-        assertTrue(SortLevel.BubbleSortStep(input));
+        assertFalse(SortLevel.BubbleSortStep(input));
         assertArrayEquals(new int[] {4, 2, -1, 0, 9}, input);
     }
 
     @Test
     void testBubbleSortForSortedArray() {
         int[] input = new int[] {3, 7, 10, 11, 11, 56};
-        assertFalse(SortLevel.BubbleSortStep(input));
+        assertTrue(SortLevel.BubbleSortStep(input));
         assertArrayEquals(new int[] {3, 7, 10, 11, 11, 56}, input);
     }
 
     @Test
     void testBubbleSortForEmptyArray() {
         int[] input = new int[] {};
-        assertFalse(SortLevel.BubbleSortStep(input));
+        assertTrue(SortLevel.BubbleSortStep(input));
         assertArrayEquals(new int[] {}, input);
     }
 }
