@@ -1,4 +1,4 @@
-public class SelectionAndBubbleSorts {
+public class SortLevel {
     public static void SelectionSortStep(int[] array, int i) {
         if (i >= array.length - 1) {
             return;
@@ -31,3 +31,5 @@ public class SelectionAndBubbleSorts {
         array[fst] = -array[fst] - array[snd];
     }
 }
+
+
