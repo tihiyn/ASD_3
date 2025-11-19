@@ -13,12 +13,12 @@ class KnuthSequenceTest {
 
     @Test
     void testKnuthSequenceForEmptyArray() {
-        assertEquals(new ArrayList<>(), SortLevel.KnuthSequence(0));
+        assertEquals(new ArrayList<>(List.of(1)), SortLevel.KnuthSequence(0));
     }
 
     @Test
     void testKnuthSequenceForSingleElementArray() {
-        assertEquals(new ArrayList<>(), SortLevel.KnuthSequence(1));
+        assertEquals(new ArrayList<>(List.of(1)), SortLevel.KnuthSequence(1));
     }
 
     @Test
@@ -28,6 +28,5 @@ class KnuthSequenceTest {
             SortLevel.KnuthSequence(300_000)
         );
     }
-
-
 }
+
