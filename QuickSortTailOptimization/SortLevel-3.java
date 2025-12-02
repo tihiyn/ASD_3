@@ -1,4 +1,3 @@
-import Task_6.SortLevel;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -39,3 +38,6 @@ public class QuickSortTailOptimizationTest {
         assertArrayEquals(new int[] {}, input);
     }
 }
+
+
+
