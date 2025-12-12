@@ -11,7 +11,7 @@ public class SortLevel {
         ArrayList<Integer> res = new ArrayList<>(arr.size());
         int lPtr = 0;
         int rPtr = 0;
-        while (lPtr != left.size() && rPtr != right.size()) {
+        for (; lPtr != left.size() && rPtr != right.size(); ) {
             if (left.get(lPtr) <= right.get(rPtr)) {
                 res.add(left.get(lPtr));
                 lPtr++;
