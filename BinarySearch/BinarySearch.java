@@ -21,7 +21,7 @@ public class BinarySearch {
             return;
         }
         correctBounds(N, cntr);
-        if (Left => Right) {
+        if (Left >= Right) {
             res = checkFound(N, Left);
         }
     }
