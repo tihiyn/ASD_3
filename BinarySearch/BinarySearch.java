@@ -21,13 +21,13 @@ public class BinarySearch {
             return;
         }
         correctBounds(N, cntr);
-        if (Left >= Right) {
-            res = checkFound(N, Left);
+        if (Right - Left < 2) {
+            res = checkFound(N, Left, Right);
         }
     }
 
-    private int checkFound(int N, int pos) {
-        if (arr[pos] == N) {
+    private int checkFound(int N, int Left, int Right) {
+        if (arr[Left] == N || arr[Right] == N) {
             return 1;
         }
         return -1;

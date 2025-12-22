@@ -42,10 +42,8 @@ class BinarySearchTest {
         bs.Step(310);
         assertEquals(0, bs.GetResult());
         bs.Step(310);
-        assertEquals(0, bs.GetResult());
-        bs.Step(310);
         assertEquals(1, bs.GetResult());
-        assertEquals(8, bs.Left);
+        assertEquals(7, bs.Left);
         assertEquals(8, bs.Right);
     }
 
@@ -62,17 +60,15 @@ class BinarySearchTest {
     }
 
     @Test
-    void testBinarySearchNotFoundIfRightLowerThanLeft() {
+    void testBinarySearchNotFoundIfDiffOneBetweenLeftAndRight() {
         int[] arr = new int[] {0, 3, 23, 33, 39, 46, 87, 99};
         BinarySearch bs = new BinarySearch(arr);
         bs.Step(80);
         assertEquals(0, bs.GetResult());
         bs.Step(80);
-        assertEquals(0, bs.GetResult());
-        bs.Step(80);
         assertEquals(-1, bs.GetResult());
         assertEquals(6, bs.Left);
-        assertEquals(5, bs.Right);
+        assertEquals(7, bs.Right);
     }
 
     @Test
